@@ -213,7 +213,6 @@ public class FollowerConstants {
 
     /**
      * 'Drive Kalman Filter Model Covariance' (Q: Process noise covariance)
-     *
      * Controls prediction vs measurement trust, higher = faster response, lower = smoother motion.
      * Default Value: 6
      */
@@ -221,7 +220,6 @@ public class FollowerConstants {
 
     /**
      * 'Drive Kalman Filter Data Covariance' (R: Measurement noise covariance)
-     *
      * Controls measurement accuracy/noise level, higher = ignore noisy data, lower = trust measurements more.
      * Default Value: 1
      */
@@ -229,21 +227,18 @@ public class FollowerConstants {
   
     /** The velocity threshold for stuck detection. If the robot's velocity is below this value,
      * the stuck detection timer will start.
-     * 
      * Default Value: 1.0
      */
     public double stuckVelocity = 1.0;
 
     /**
      * If the t value is below this, the robot can't be considered stuck (still accelerating)
-     * 
      * Default Value: 0.1
      */
     public double stuckTValueLow = 0.1;
 
     /**
      * If the t value is above this, the robot can't be considered stuck (decelerating)
-     * 
      * Default Value: 0.8
      */
     public double stuckTValueHigh = 0.8;
